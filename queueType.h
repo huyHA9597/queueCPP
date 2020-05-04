@@ -166,6 +166,19 @@ queueType<Type>::~queueType()
 }   // end destructor
 
 // copy constructor ????
+template <class Type>
+queueType<Type>::queueType(const queueType<Type>& otherQueue)
+{
+    list = nullptr;
+    // Not finished
+}   // end copy constructor
+
 // overloading assignment operator =    ????
+template <class Type>
+const queueType<Type>& queueType<Type>::operator= (const queueType<Type>& otherQueue)
+{
+    if (this != &otherQueue)    // avoid self-copy
+    // Not finished
+}
 
 #endif
